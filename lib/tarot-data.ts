@@ -7,7 +7,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Fool',
     number: 0,
     type: 'major',
-    image: '/cards/major/00_fool.jpeg',
+    image: '/cards/major/major_arcana_fool.png',
     keywords: ['new beginnings', 'innocence', 'spontaneity', 'faith', 'free spirit'],
     upright: {
       meaning: 'Embrace new adventures with trust and innocence. Take a leap of faith into the unknown.',
@@ -25,7 +25,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Magician',
     number: 1,
     type: 'major',
-    image: '/cards/major/01_magician.jpeg',
+    image: '/cards/major/major_arcana_magician.png',
     keywords: ['manifestation', 'resourcefulness', 'power', 'skill', 'action'],
     upright: {
       meaning: 'You have all the tools needed to manifest your desires. Take action and create your reality.',
@@ -43,7 +43,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The High Priestess',
     number: 2,
     type: 'major',
-    image: '/cards/major/02_high_priestess.jpeg',
+    image: '/cards/major/major_arcana_priestess.png',
     keywords: ['intuition', 'subconscious', 'mystery', 'inner knowledge', 'divine feminine'],
     upright: {
       meaning: 'Trust your intuition and look beneath the surface. The answers lie within.',
@@ -61,7 +61,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Empress',
     number: 3,
     type: 'major',
-    image: '/cards/major/03_empress.jpeg',
+    image: '/cards/major/major_arcana_empress.png',
     keywords: ['femininity', 'beauty', 'nature', 'nurturing', 'abundance'],
     upright: {
       meaning: 'Embrace your feminine energy. Connect with nature and nurture yourself and others.',
@@ -79,7 +79,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Emperor',
     number: 4,
     type: 'major',
-    image: '/cards/major/04_emperor.jpeg',
+    image: '/cards/major/major_arcana_emperor.png',
     keywords: ['authority', 'structure', 'control', 'fatherhood', 'leadership'],
     upright: {
       meaning: 'Take control of your life. Establish structure and authority. Lead with confidence.',
@@ -97,7 +97,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Hierophant',
     number: 5,
     type: 'major',
-    image: '/cards/major/05_hierophant.jpeg',
+    image: '/cards/major/major_arcana_hierophant.png',
     keywords: ['tradition', 'conformity', 'morality', 'ethics', 'religious beliefs'],
     upright: {
       meaning: 'Follow traditional values and seek spiritual guidance. Learn from teachers and mentors.',
@@ -115,7 +115,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Lovers',
     number: 6,
     type: 'major',
-    image: '/cards/major/06_lovers.jpeg',
+    image: '/cards/major/major_arcana_lovers.png',
     keywords: ['love', 'harmony', 'relationships', 'values alignment', 'choices'],
     upright: {
       meaning: 'Embrace love and harmony. Make choices that align with your values and heart.',
@@ -133,7 +133,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Chariot',
     number: 7,
     type: 'major',
-    image: '/cards/major/07_chariot.jpeg',
+    image: '/cards/major/major_arcana_chariot.png',
     keywords: ['control', 'willpower', 'success', 'action', 'determination'],
     upright: {
       meaning: 'Take control of your life through willpower and determination. Success comes through focused action.',
@@ -151,7 +151,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Strength',
     number: 8,
     type: 'major',
-    image: '/cards/major/08_strength.jpeg',
+    image: '/cards/major/major_arcana_strength.png',
     keywords: ['strength', 'courage', 'persuasion', 'influence', 'compassion'],
     upright: {
       meaning: 'Find strength through compassion and patience. True power comes from within.',
@@ -169,7 +169,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Hermit',
     number: 9,
     type: 'major',
-    image: '/cards/major/09_hermit.jpeg',
+    image: '/cards/major/major_arcana_hermit.png',
     keywords: ['soul-searching', 'introspection', 'being alone', 'inner guidance', 'solitude'],
     upright: {
       meaning: 'Take time for introspection and soul-searching. Seek inner guidance through solitude.',
@@ -187,7 +187,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Wheel of Fortune',
     number: 10,
     type: 'major',
-    image: '/cards/major/10_wheel_of_fortune.jpeg',
+    image: '/cards/major/major_arcana_wheel.png',
     keywords: ['good luck', 'karma', 'life cycles', 'destiny', 'fate'],
     upright: {
       meaning: 'Embrace the cycles of life. Good luck and positive changes are coming your way.',
@@ -205,7 +205,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Justice',
     number: 11,
     type: 'major',
-    image: '/cards/major/11_justice.jpeg',
+    image: '/cards/major/major_arcana_justice.png',
     keywords: ['justice', 'fairness', 'truth', 'cause and effect', 'law'],
     upright: {
       meaning: 'Seek justice and fairness. Truth will prevail. Your actions have consequences.',
@@ -223,7 +223,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Hanged Man',
     number: 12,
     type: 'major',
-    image: '/cards/major/12_hanged_man.jpeg',
+    image: '/cards/major/major_arcana_hanged.png',
     keywords: ['pause', 'surrender', 'letting go', 'new perspectives', 'sacrifice'],
     upright: {
       meaning: 'Pause and surrender. Let go of control and see things from a new perspective.',
@@ -241,7 +241,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Death',
     number: 13,
     type: 'major',
-    image: '/cards/major/13_death.jpeg',
+    image: '/cards/major/major_arcana_death.png',
     keywords: ['endings', 'change', 'transformation', 'transition', 'release'],
     upright: {
       meaning: 'Embrace endings and transformation. Change is necessary for growth.',
@@ -259,7 +259,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Temperance',
     number: 14,
     type: 'major',
-    image: '/cards/major/14_temperance.jpeg',
+    image: '/cards/major/major_arcana_temperance.png',
     keywords: ['balance', 'moderation', 'patience', 'purpose', 'meaning'],
     upright: {
       meaning: 'Find balance and moderation. Practice patience and seek meaning in your life.',
@@ -277,7 +277,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Devil',
     number: 15,
     type: 'major',
-    image: '/cards/major/15_devil.jpeg',
+    image: '/cards/major/major_arcana_devil.png',
     keywords: ['shadow self', 'attachment', 'addiction', 'restriction', 'sexuality'],
     upright: {
       meaning: 'Confront your shadow self. Break free from attachments and addictions.',
@@ -295,7 +295,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Tower',
     number: 16,
     type: 'major',
-    image: '/cards/major/16_tower.jpeg',
+    image: '/cards/major/major_arcana_tower.png',
     keywords: ['sudden change', 'upheaval', 'chaos', 'revelation', 'awakening'],
     upright: {
       meaning: 'Embrace sudden change and upheaval. Destruction leads to revelation and awakening.',
@@ -313,7 +313,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Star',
     number: 17,
     type: 'major',
-    image: '/cards/major/17_star.jpeg',
+    image: '/cards/major/major_arcana_star.png',
     keywords: ['hope', 'faith', 'purpose', 'renewal', 'spirituality'],
     upright: {
       meaning: 'Have hope and faith. Renew your sense of purpose and connect with your spirituality.',
@@ -331,7 +331,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Moon',
     number: 18,
     type: 'major',
-    image: '/cards/major/18_moon.jpeg',
+    image: '/cards/major/major_arcana_moon.png',
     keywords: ['illusion', 'fear', 'anxiety', 'subconscious', 'intuition'],
     upright: {
       meaning: 'Trust your intuition and face your fears. Illusions may cloud your judgment.',
@@ -349,7 +349,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The Sun',
     number: 19,
     type: 'major',
-    image: '/cards/major/19_sun.jpeg',
+    image: '/cards/major/major_arcana_sun.png',
     keywords: ['positivity', 'fun', 'warmth', 'success', 'vitality'],
     upright: {
       meaning: 'Embrace positivity and joy. Success and vitality are yours to claim.',
@@ -367,7 +367,7 @@ export const tarotCards: TarotCard[] = [
     name: 'Judgement',
     number: 20,
     type: 'major',
-    image: '/cards/major/20_judgement.jpeg',
+    image: '/cards/major/major_arcana_judgement.png',
     keywords: ['judgement', 'rebirth', 'inner calling', 'absolution', 'reflection'],
     upright: {
       meaning: 'Embrace judgement and rebirth. Answer your inner calling and seek absolution.',
@@ -385,7 +385,7 @@ export const tarotCards: TarotCard[] = [
     name: 'The World',
     number: 21,
     type: 'major',
-    image: '/cards/major/21_world.jpeg',
+    image: '/cards/major/major_arcana_world.png',
     keywords: ['completion', 'integration', 'accomplishment', 'travel', 'fulfillment'],
     upright: {
       meaning: 'Celebrate completion and accomplishment. You have achieved fulfillment and integration.',
@@ -406,7 +406,7 @@ export const tarotCards: TarotCard[] = [
     number: 1,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/01_ace.jpeg',
+    image: '/cards/wands/wands_ace.png',
     keywords: ['inspiration', 'new opportunities', 'growth', 'potential', 'new beginnings'],
     upright: {
       meaning: 'A new opportunity or creative spark is coming your way. Seize it with enthusiasm.',
@@ -425,7 +425,7 @@ export const tarotCards: TarotCard[] = [
     number: 2,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/02_two.jpeg',
+    image: '/cards/wands/wands_two.png',
     keywords: ['future planning', 'progress', 'decisions', 'discovery', 'decisions'],
     upright: {
       meaning: 'Plan for the future and make important decisions. Progress is on the horizon.',
@@ -444,7 +444,7 @@ export const tarotCards: TarotCard[] = [
     number: 3,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/03_three.jpeg',
+    image: '/cards/wands/wands_three.png',
     keywords: ['progress', 'expansion', 'foresight', 'overseas opportunities', 'business'],
     upright: {
       meaning: 'Progress and expansion are coming. Look for opportunities beyond your current situation.',
@@ -463,7 +463,7 @@ export const tarotCards: TarotCard[] = [
     number: 4,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/04_four.jpeg',
+    image: '/cards/wands/wands_four.png',
     keywords: ['celebration', 'joy', 'harmony', 'relaxation', 'homecoming'],
     upright: {
       meaning: 'Celebrate and enjoy the moment. Harmony and joy surround you.',
@@ -482,7 +482,7 @@ export const tarotCards: TarotCard[] = [
     number: 5,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/05_five.jpeg',
+    image: '/cards/wands/wands_five.png',
     keywords: ['conflict', 'disagreements', 'competition', 'tension', 'clash'],
     upright: {
       meaning: 'Face conflicts and disagreements head-on. Competition can lead to growth.',
@@ -501,7 +501,7 @@ export const tarotCards: TarotCard[] = [
     number: 6,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/06_six.jpeg',
+    image: '/cards/wands/wands_six.png',
     keywords: ['success', 'public recognition', 'progress', 'confidence', 'victory'],
     upright: {
       meaning: 'Celebrate your success and public recognition. Confidence and victory are yours.',
@@ -520,7 +520,7 @@ export const tarotCards: TarotCard[] = [
     number: 7,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/07_seven.jpeg',
+    image: '/cards/wands/wands_seven.png',
     keywords: ['challenge', 'competition', 'protection', 'perseverance', 'standing ground'],
     upright: {
       meaning: 'Stand your ground and defend your position. Perseverance will lead to success.',
@@ -539,7 +539,7 @@ export const tarotCards: TarotCard[] = [
     number: 8,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/08_eight.jpeg',
+    image: '/cards/wands/wands_eight.png',
     keywords: ['movement', 'fast paced change', 'action', 'alignment', 'travel'],
     upright: {
       meaning: 'Movement and fast-paced change are coming. Take action and align with your goals.',
@@ -558,7 +558,7 @@ export const tarotCards: TarotCard[] = [
     number: 9,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/09_nine.jpeg',
+    image: '/cards/wands/wands_nine.png',
     keywords: ['resilience', 'courage', 'persistence', 'test of faith', 'exhaustion'],
     upright: {
       meaning: 'Stay resilient and courageous. Persistence will help you overcome challenges.',
@@ -577,7 +577,7 @@ export const tarotCards: TarotCard[] = [
     number: 10,
     type: 'minor',
     suit: 'wands',
-    image: '/cards/wands/10_ten.jpeg',
+    image: '/cards/wands/wands_ten.png',
     keywords: ['burden', 'extra responsibility', 'hard work', 'completion', 'overwhelmed'],
     upright: {
       meaning: 'You may feel burdened by extra responsibility. Hard work will lead to completion.',
@@ -597,7 +597,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'wands',
     court: 'page',
-    image: '/cards/wands/11_page.jpeg',
+    image: '/cards/wands/wands_page.png',
     keywords: ['inspiration', 'ideas', 'discovery', 'limitless potential', 'free spirit'],
     upright: {
       meaning: 'Embrace inspiration and new ideas. Your potential is limitless.',
@@ -617,7 +617,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'wands',
     court: 'knight',
-    image: '/cards/wands/12_knight.jpeg',
+    image: '/cards/wands/wands_knight.png',
     keywords: ['energy', 'passion', 'inspired action', 'adventure', 'impulsiveness'],
     upright: {
       meaning: 'Channel your energy and passion into inspired action. Adventure awaits.',
@@ -637,7 +637,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'wands',
     court: 'queen',
-    image: '/cards/wands/13_queen.jpeg',
+    image: '/cards/wands/wands_queen.png',
     keywords: ['courage', 'confidence', 'independence', 'social butterfly', 'determination'],
     upright: {
       meaning: 'Embrace your courage and confidence. Independence and determination will lead to success.',
@@ -657,7 +657,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'wands',
     court: 'king',
-    image: '/cards/wands/14_king.jpeg',
+    image: '/cards/wands/wands_king.png',
     keywords: ['natural born leader', 'vision', 'entrepreneur', 'honour', 'risk-taker'],
     upright: {
       meaning: 'Lead with vision and honor. Take calculated risks as an entrepreneur.',
@@ -678,7 +678,7 @@ export const tarotCards: TarotCard[] = [
     number: 1,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/01_ace.jpeg',
+    image: '/cards/cups/cups_ace.png',
     keywords: ['love', 'new relationships', 'compassion', 'creativity', 'intuition'],
     upright: {
       meaning: 'Open your heart to love and new relationships. Compassion and creativity flow through you.',
@@ -697,7 +697,7 @@ export const tarotCards: TarotCard[] = [
     number: 2,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/02_two.jpeg',
+    image: '/cards/cups/cups_two.png',
     keywords: ['unified love', 'partnership', 'mutual attraction', 'relationships', 'connection'],
     upright: {
       meaning: 'Experience unified love and partnership. Mutual attraction strengthens your connection.',
@@ -716,7 +716,7 @@ export const tarotCards: TarotCard[] = [
     number: 3,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/03_three.jpeg',
+    image: '/cards/cups/cups_three.png',
     keywords: ['celebration', 'friendship', 'creativity', 'collaborations', 'community'],
     upright: {
       meaning: 'Celebrate with friends and community. Creativity flourishes through collaboration.',
@@ -735,7 +735,7 @@ export const tarotCards: TarotCard[] = [
     number: 4,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/04_four.jpeg',
+    image: '/cards/cups/cups_four.png',
     keywords: ['meditation', 'contemplation', 'apathy', 'reevaluation', 'disconnection'],
     upright: {
       meaning: 'Take time for meditation and contemplation. Reevaluate your connections.',
@@ -754,7 +754,7 @@ export const tarotCards: TarotCard[] = [
     number: 5,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/05_five.jpeg',
+    image: '/cards/cups/cups_five.png',
     keywords: ['regret', 'failure', 'disappointment', 'pessimism', 'loss'],
     upright: {
       meaning: 'Face regret and disappointment. Learn from failure and move forward.',
@@ -773,7 +773,7 @@ export const tarotCards: TarotCard[] = [
     number: 6,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/06_six.jpeg',
+    image: '/cards/cups/cups_six.png',
     keywords: ['revisiting the past', 'childhood memories', 'innocence', 'joy', 'nostalgia'],
     upright: {
       meaning: 'Revisit the past with nostalgia. Childhood memories bring joy and innocence.',
@@ -792,7 +792,7 @@ export const tarotCards: TarotCard[] = [
     number: 7,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/07_seven.jpeg',
+    image: '/cards/cups/cups_seven.png',
     keywords: ['opportunities', 'choices', 'wishful thinking', 'illusion', 'fantasy'],
     upright: {
       meaning: 'Many opportunities and choices await. Avoid wishful thinking and illusion.',
@@ -811,7 +811,7 @@ export const tarotCards: TarotCard[] = [
     number: 8,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/08_eight.jpeg',
+    image: '/cards/cups/cups_eight.png',
     keywords: ['disappointment', 'abandonment', 'withdrawal', 'escapism', 'walking away'],
     upright: {
       meaning: 'Face disappointment and walk away. Withdrawal may be necessary for growth.',
@@ -830,7 +830,7 @@ export const tarotCards: TarotCard[] = [
     number: 9,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/09_nine.jpeg',
+    image: '/cards/cups/cups_nine.png',
     keywords: ['contentment', 'satisfaction', 'gratitude', 'wish come true', 'abundance'],
     upright: {
       meaning: 'Experience contentment and satisfaction. Your wishes have come true.',
@@ -849,7 +849,7 @@ export const tarotCards: TarotCard[] = [
     number: 10,
     type: 'minor',
     suit: 'cups',
-    image: '/cards/cups/10_ten.jpeg',
+    image: '/cards/cups/cups_ten.png',
     keywords: ['divine love', 'blissful relationships', 'harmony', 'alignment', 'joy'],
     upright: {
       meaning: 'Experience divine love and blissful relationships. Harmony and joy fill your life.',
@@ -869,7 +869,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'cups',
     court: 'page',
-    image: '/cards/cups/11_page.jpeg',
+    image: '/cards/cups/cups_page.png',
     keywords: ['creative opportunities', 'intuitive messages', 'curiosity', 'wonder', 'exploration of emotions'],
     upright: {
       meaning: 'Embrace creative opportunities and intuitive messages. Curiosity leads to wonder.',
@@ -889,7 +889,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'cups',
     court: 'knight',
-    image: '/cards/cups/12_knight.jpeg',
+    image: '/cards/cups/cups_knight.png',
     keywords: ['creativity', 'romance', 'charm', 'imagination', 'beauty'],
     upright: {
       meaning: 'Express your creativity and romance. Charm and imagination guide your path.',
@@ -909,7 +909,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'cups',
     court: 'queen',
-    image: '/cards/cups/13_queen.jpeg',
+    image: '/cards/cups/cups_queen.png',
     keywords: ['compassionate', 'caring', 'emotionally stable', 'intuitive', 'in flow'],
     upright: {
       meaning: 'Embrace compassion and emotional stability. Intuition guides your flow.',
@@ -929,7 +929,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'cups',
     court: 'king',
-    image: '/cards/cups/14_king.jpeg',
+    image: '/cards/cups/cups_king.png',
     keywords: ['emotionally balanced', 'compassionate', 'diplomatic', 'calm', 'caring'],
     upright: {
       meaning: 'Maintain emotional balance and compassion. Diplomacy and calm guide your actions.',
@@ -950,7 +950,7 @@ export const tarotCards: TarotCard[] = [
     number: 1,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/01_ace.jpeg',
+    image: '/cards/swords/swords_ace.png',
     keywords: ['breakthroughs', 'new ideas', 'mental clarity', 'success', 'truth'],
     upright: {
       meaning: 'Experience breakthroughs and new ideas. Mental clarity leads to success and truth.',
@@ -969,7 +969,7 @@ export const tarotCards: TarotCard[] = [
     number: 2,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/02_two.jpeg',
+    image: '/cards/swords/swords_two.png',
     keywords: ['difficult decisions', 'weighing options', 'an impasse', 'avoidance', 'an impasse'],
     upright: {
       meaning: 'Face difficult decisions by weighing your options. Avoidance only prolongs the impasse.',
@@ -988,7 +988,7 @@ export const tarotCards: TarotCard[] = [
     number: 3,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/03_three.jpeg',
+    image: '/cards/swords/swords_three.png',
     keywords: ['heartbreak', 'emotional pain', 'sorrow', 'grief', 'hurt'],
     upright: {
       meaning: 'Face heartbreak and emotional pain. Sorrow and grief are part of the healing process.',
@@ -1007,7 +1007,7 @@ export const tarotCards: TarotCard[] = [
     number: 4,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/04_four.jpeg',
+    image: '/cards/swords/swords_four.png',
     keywords: ['rest', 'relaxation', 'meditation', 'contemplation', 'recuperation'],
     upright: {
       meaning: 'Take time for rest and relaxation. Meditation and contemplation bring peace.',
@@ -1026,7 +1026,7 @@ export const tarotCards: TarotCard[] = [
     number: 5,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/05_five.jpeg',
+    image: '/cards/swords/swords_five.png',
     keywords: ['conflict', 'disagreements', 'competition', 'defeat', 'winning at all costs'],
     upright: {
       meaning: 'Face conflict and disagreements. Competition may lead to defeat or victory.',
@@ -1045,7 +1045,7 @@ export const tarotCards: TarotCard[] = [
     number: 6,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/06_six.jpeg',
+    image: '/cards/swords/swords_six.png',
     keywords: ['transition', 'change', 'rite of passage', 'releasing baggage', 'moving on'],
     upright: {
       meaning: 'Embrace transition and change. Release baggage and move on to new horizons.',
@@ -1064,7 +1064,7 @@ export const tarotCards: TarotCard[] = [
     number: 7,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/07_seven.jpeg',
+    image: '/cards/swords/swords_seven.png',
     keywords: ['betrayal', 'deception', 'getting away with something', 'acting strategically', 'unethical behavior'],
     upright: {
       meaning: 'Be aware of betrayal and deception. Strategic thinking may lead to success.',
@@ -1083,7 +1083,7 @@ export const tarotCards: TarotCard[] = [
     number: 8,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/08_eight.jpeg',
+    image: '/cards/swords/swords_eight.png',
     keywords: ['negative thoughts', 'self-imposed restriction', 'imprisonment', 'victim mentality', 'entrapment'],
     upright: {
       meaning: 'Break free from negative thoughts and self-imposed restrictions. You are not a victim.',
@@ -1102,7 +1102,7 @@ export const tarotCards: TarotCard[] = [
     number: 9,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/09_nine.jpeg',
+    image: '/cards/swords/swords_nine.png',
     keywords: ['anxiety', 'worry', 'fear', 'depression', 'nightmares'],
     upright: {
       meaning: 'Face anxiety and worry. Fear and depression can be overcome with support.',
@@ -1121,7 +1121,7 @@ export const tarotCards: TarotCard[] = [
     number: 10,
     type: 'minor',
     suit: 'swords',
-    image: '/cards/swords/10_ten.jpeg',
+    image: '/cards/swords/swords_ten.png',
     keywords: ['painful endings', 'deep wounds', 'betrayal', 'loss', 'crisis'],
     upright: {
       meaning: 'Face painful endings and deep wounds. Betrayal and loss lead to new beginnings.',
@@ -1141,7 +1141,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'swords',
     court: 'page',
-    image: '/cards/swords/11_page.jpeg',
+    image: '/cards/swords/swords_page.png',
     keywords: ['new ideas', 'curiosity', 'thirst for knowledge', 'new ways of communicating', 'mental clarity'],
     upright: {
       meaning: 'Embrace new ideas and curiosity. Thirst for knowledge brings mental clarity.',
@@ -1161,7 +1161,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'swords',
     court: 'knight',
-    image: '/cards/swords/12_knight.jpeg',
+    image: '/cards/swords/swords_knight.png',
     keywords: ['ambitious', 'action-oriented', 'driven to succeed', 'fast-thinking', 'protective'],
     upright: {
       meaning: 'Channel your ambition into action. Fast-thinking and drive lead to success.',
@@ -1181,7 +1181,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'swords',
     court: 'queen',
-    image: '/cards/swords/13_queen.jpeg',
+    image: '/cards/swords/swords_queen.png',
     keywords: ['independent', 'unbiased judgement', 'clear boundaries', 'direct communication', 'firm'],
     upright: {
       meaning: 'Maintain independence and unbiased judgement. Clear boundaries and direct communication serve you.',
@@ -1201,7 +1201,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'swords',
     court: 'king',
-    image: '/cards/swords/14_king.jpeg',
+    image: '/cards/swords/swords_king.png',
     keywords: ['mental clarity', 'intellectual power', 'authority', 'truth', 'discipline'],
     upright: {
       meaning: 'Exercise mental clarity and intellectual power. Authority and truth guide your discipline.',
@@ -1222,7 +1222,7 @@ export const tarotCards: TarotCard[] = [
     number: 1,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/01_ace.jpeg',
+    image: '/cards/pentacles/pentacles_ace.png',
     keywords: ['a new financial opportunity', 'manifestation', 'abundance', 'new venture', 'prosperity'],
     upright: {
       meaning: 'A new financial opportunity is coming. Manifest abundance and prosperity.',
@@ -1241,7 +1241,7 @@ export const tarotCards: TarotCard[] = [
     number: 2,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/02_two.jpeg',
+    image: '/cards/pentacles/pentacles_two.png',
     keywords: ['multiple priorities', 'time management', 'prioritisation', 'adaptability', 'flexibility'],
     upright: {
       meaning: 'Manage multiple priorities with time management. Adaptability and flexibility are key.',
@@ -1260,7 +1260,7 @@ export const tarotCards: TarotCard[] = [
     number: 3,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/03_three.jpeg',
+    image: '/cards/pentacles/pentacles_three.png',
     keywords: ['teamwork', 'collaboration', 'learning', 'implementation', 'building'],
     upright: {
       meaning: 'Collaborate with others through teamwork. Learning and implementation lead to building.',
@@ -1279,7 +1279,7 @@ export const tarotCards: TarotCard[] = [
     number: 4,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/04_four.jpeg',
+    image: '/cards/pentacles/pentacles_four.png',
     keywords: ['saving money', 'security', 'conservatism', 'scarcity', 'control'],
     upright: {
       meaning: 'Save money and seek security. Conservatism and control provide stability.',
@@ -1298,7 +1298,7 @@ export const tarotCards: TarotCard[] = [
     number: 5,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/05_five.jpeg',
+    image: '/cards/pentacles/pentacles_five.png',
     keywords: ['financial loss', 'poverty', 'lack mindset', 'financial struggle', 'isolation'],
     upright: {
       meaning: 'Face financial loss and poverty. A lack mindset leads to financial struggle.',
@@ -1317,7 +1317,7 @@ export const tarotCards: TarotCard[] = [
     number: 6,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/06_six.jpeg',
+    image: '/cards/pentacles/pentacles_six.png',
     keywords: ['giving', 'receiving', 'sharing wealth', 'generosity', 'charity'],
     upright: {
       meaning: 'Practice giving and receiving. Share your wealth through generosity and charity.',
@@ -1336,7 +1336,7 @@ export const tarotCards: TarotCard[] = [
     number: 7,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/07_seven.jpeg',
+    image: '/cards/pentacles/pentacles_seven.png',
     keywords: ['long-term view', 'sustainable results', 'perseverance', 'investment', 'patience'],
     upright: {
       meaning: 'Take a long-term view for sustainable results. Perseverance and investment require patience.',
@@ -1355,7 +1355,7 @@ export const tarotCards: TarotCard[] = [
     number: 8,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/08_eight.jpeg',
+    image: '/cards/pentacles/pentacles_eight.png',
     keywords: ['apprenticeship', 'repetitive tasks', 'mastery', 'skill development', 'diligence'],
     upright: {
       meaning: 'Embrace apprenticeship and repetitive tasks. Mastery and skill development require diligence.',
@@ -1374,7 +1374,7 @@ export const tarotCards: TarotCard[] = [
     number: 9,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/09_nine.jpeg',
+    image: '/cards/pentacles/pentacles_nine.png',
     keywords: ['abundance', 'luxury', 'self-sufficiency', 'financial independence', 'fulfillment'],
     upright: {
       meaning: 'Enjoy abundance and luxury. Self-sufficiency and financial independence bring fulfillment.',
@@ -1393,7 +1393,7 @@ export const tarotCards: TarotCard[] = [
     number: 10,
     type: 'minor',
     suit: 'pentacles',
-    image: '/cards/pentacles/10_ten.jpeg',
+    image: '/cards/pentacles/pentacles_ten.png',
     keywords: ['wealth', 'financial security', 'family', 'long-term success', 'contribution'],
     upright: {
       meaning: 'Achieve wealth and financial security. Family and long-term success bring fulfillment.',
@@ -1413,7 +1413,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'pentacles',
     court: 'page',
-    image: '/cards/pentacles/11_page.jpeg',
+    image: '/cards/pentacles/pentacles_page.png',
     keywords: ['manifestation', 'financial opportunity', 'skill building', 'diligence', 'focus'],
     upright: {
       meaning: 'Manifest your desires and seize financial opportunities. Skill building requires diligence and focus.',
@@ -1433,7 +1433,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'pentacles',
     court: 'knight',
-    image: '/cards/pentacles/12_knight.jpeg',
+    image: '/cards/pentacles/pentacles_knight.png',
     keywords: ['hard work', 'productivity', 'routine', 'conservatism', 'methodical'],
     upright: {
       meaning: 'Work hard and be productive. Routine and conservatism lead to methodical success.',
@@ -1453,7 +1453,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'pentacles',
     court: 'queen',
-    image: '/cards/pentacles/13_queen.jpeg',
+    image: '/cards/pentacles/pentacles_queen.png',
     keywords: ['nurturing', 'practical', 'providing financially', 'a working parent', 'abundance'],
     upright: {
       meaning: 'Nurture others with practical care. Providing financially brings abundance and security.',
@@ -1473,7 +1473,7 @@ export const tarotCards: TarotCard[] = [
     type: 'minor',
     suit: 'pentacles',
     court: 'king',
-    image: '/cards/pentacles/14_king.jpeg',
+    image: '/cards/pentacles/pentacles_king.png',
     keywords: ['wealth', 'business', 'leadership', 'security', 'discipline'],
     upright: {
       meaning: 'Build wealth and business through leadership. Security and discipline create prosperity.',

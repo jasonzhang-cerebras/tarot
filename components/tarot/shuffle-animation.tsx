@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { TarotCard } from "@/types/tarot"
-import { CardFlip } from "./card-flip"
+import { Card } from "./card"
 
 interface ShuffleAnimationProps {
   cards: TarotCard[]
@@ -10,12 +10,16 @@ interface ShuffleAnimationProps {
 }
 
 export function ShuffleAnimation({ cards, onComplete }: ShuffleAnimationProps) {
+  console.log("[ShuffleAnimation] Rendering with", cards.length, "cards")
+
   return (
     <div className="flex flex-col items-center justify-center gap-8 p-8 min-h-[600px]">
       <motion.h2
         className="text-3xl font-bold text-purple-900"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
       >
         Shuffling the Cards...
       </motion.h2>
@@ -43,18 +47,26 @@ export function ShuffleAnimation({ cards, onComplete }: ShuffleAnimationProps) {
                 rotate: angle,
                 opacity: 1,
               }}
+              exit={{
+                opacity: 0,
+                scale: 0.5,
+                rotate: angle + 180,
+              }}
               transition={{
                 delay: index * 0.05,
                 duration: 0.5,
                 type: "spring",
+                stiffness: 100,
+                damping: 15,
               }}
               onAnimationComplete={() => {
                 if (index === cards.length - 1) {
-                  setTimeout(onComplete, 500)
+                  console.log("[ShuffleAnimation] All animations complete, calling onComplete")
+                  setTimeout(onComplete, 300)
                 }
               }}
             >
-              <CardFlip card={card} size="sm" />
+              <Card card={card} size="sm" showBack={true} />
             </motion.div>
           )
         })}
@@ -64,7 +76,8 @@ export function ShuffleAnimation({ cards, onComplete }: ShuffleAnimationProps) {
         className="text-purple-700 text-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ delay: 1, duration: 0.3 }}
       >
         Focus on your question...
       </motion.p>

@@ -12,11 +12,35 @@ interface ReadingDisplayProps {
 
 export function ReadingDisplay({ spread, cards }: ReadingDisplayProps) {
   return (
-    <div className="flex flex-col items-center gap-8 p-8">
-      <h2 className="text-3xl font-bold text-purple-900 font-cinzel">{spread.name}</h2>
-      <p className="text-purple-700 text-center max-w-2xl">{spread.description}</p>
+    <motion.div
+      className="flex flex-col items-center gap-8 p-8"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.h2
+        className="text-3xl font-bold text-purple-900 font-cinzel"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.4 }}
+      >
+        {spread.name}
+      </motion.h2>
+      <motion.p
+        className="text-purple-700 text-center max-w-2xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+      >
+        {spread.description}
+      </motion.p>
 
-      <div className="relative w-full max-w-4xl min-h-[500px] bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border-2 border-purple-300 p-8">
+      <motion.div
+        className="relative w-full max-w-4xl min-h-[500px] bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border-2 border-purple-300 p-8"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+      >
         {cards.map((cardData, index) => {
           const position = spread.positions[index]
           if (!position) return null
@@ -61,7 +85,7 @@ export function ReadingDisplay({ spread, cards }: ReadingDisplayProps) {
             </motion.div>
           )
         })}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }

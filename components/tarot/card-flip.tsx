@@ -55,7 +55,7 @@ export function CardFlip({ card, isReversed = false, onFlip, size = "md" }: Card
             className="w-full h-full object-cover"
             style={{ transform: isReversed ? "rotate(180deg)" : "rotate(0deg)" }}
             onError={(e) => {
-              e.currentTarget.src = "/placeholder-card.png"
+              e.currentTarget.src = "/placeholder-card.svg"
             }}
           />
         </div>

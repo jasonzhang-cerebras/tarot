@@ -1,15 +1,23 @@
 # Mystic Tarot
 
-A beautiful, mystical tarot reading application featuring authentic Rider-Waite Smith cards, particle effects, and smooth animations. Now available as a native desktop application for macOS and Linux!
+A beautiful, mystical tarot reading application featuring authentic Rider-Waite Smith cards, particle effects, and smooth animations. Native desktop application for macOS and Linux!
 
 ## Features
 
 - **Authentic Rider-Waite Smith Deck**: 78 cards from the 1909 "Roses & Lilies" edition
-- **Multiple Spread Types**: Choose from various tarot spreads including:
+- **12 Spread Types**: Choose from various tarot spreads including:
   - Single Card (Daily Card)
   - Three Card Spread (Past, Present, Future)
   - Celtic Cross
+  - Relationship Spread
+  - Career Spread
+  - Yes/No Spread
+  - Four Directions Spread
   - Five Card Spread
+  - Seven Card Spread
+  - Star Spread
+  - Mandala Spread
+  - Horseshoe Spread
 - **Interactive Card Selection**: Click cards to reveal their meanings
 - **Card Reversals**: Cards can appear upright or reversed with different interpretations
 - **Particle Effects**: Beautiful floating particles in gold, white, and silver
@@ -21,7 +29,7 @@ A beautiful, mystical tarot reading application featuring authentic Rider-Waite 
 
 ## Tech Stack
 
-- **Framework**: Next.js 16.1.3 with App Router
+- **Framework**: Next.js 16.1.3 with App Router (for static export)
 - **Desktop Runtime**: Tauri 2.9.6
 - **Backend**: Rust with serde for data persistence
 - **Runtime**: Bun
@@ -41,16 +49,9 @@ A beautiful, mystical tarot reading application featuring authentic Rider-Waite 
 ### Installation
 
 ```bash
+cd /Users/Jason.Zhang/cerebras-code-cli/tarot
 bun install
 ```
-
-### Web Development
-
-```bash
-bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Desktop App Development
 
@@ -62,14 +63,6 @@ This will launch the native desktop application with hot-reloading.
 
 ### Building for Production
 
-#### Web Build
-
-```bash
-bun run build
-```
-
-#### Desktop App Build
-
 ```bash
 bun run tauri:build
 ```
@@ -79,11 +72,15 @@ This creates:
 - macOS App: `src-tauri/target/release/bundle/macos/Mystic Tarot.app`
 - DMG Installer: `src-tauri/target/release/bundle/dmg/Mystic Tarot_0.0.0_x64.dmg`
 
-### Running Production Web Server
+## Important
+
+**Always run commands from the tarot project directory:**
 
 ```bash
-bun run start
+cd /Users/Jason.Zhang/cerebras-code-cli/tarot
 ```
+
+The project uses Next.js to generate static HTML/CSS/JS files that are bundled into the desktop application. The `bun run build` command creates the static export in the `out/` directory, which Tauri then packages into the native app.
 
 ## Project Structure
 

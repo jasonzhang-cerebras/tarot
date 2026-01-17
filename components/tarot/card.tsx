@@ -27,30 +27,44 @@ export function Card({ card, isReversed = false, onClick, size = "md", showBack 
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={!showBack ? { scale: 1.05 } : {}}
+      whileTap={!showBack ? { scale: 0.95 } : {}}
+      initial={{ opacity: 0, scale: 0.8 }}
       animate={{
-        rotate: isReversed ? 180 : 0,
+        opacity: 1,
+        scale: 1,
+        rotate: isReversed && !showBack ? 180 : 0,
       }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {showBack ? (
-        <div className="w-full h-full rounded-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 border-2 border-yellow-500 shadow-lg flex items-center justify-center">
+        <motion.div
+          className="w-full h-full rounded-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 border-2 border-yellow-500 shadow-lg flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="w-3/4 h-3/4 rounded-full border-2 border-yellow-500/50 flex items-center justify-center">
             <div className="w-1/2 h-1/2 rounded-full bg-yellow-500/20" />
           </div>
-        </div>
+        </motion.div>
       ) : (
-        <div className="w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-yellow-600 shadow-lg overflow-hidden">
+        <motion.div
+          className="w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-yellow-600 shadow-lg overflow-hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
           <img
             src={card.image}
             alt={card.name}
             className="w-full h-full object-cover"
             onError={(e) => {
+              console.error("[Card] Failed to load image:", card.image)
               e.currentTarget.src = "/placeholder-card.svg"
             }}
           />
-        </div>
+        </motion.div>
       )}
 
       {isHovered && !showBack && (
