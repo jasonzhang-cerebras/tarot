@@ -6,10 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:unit": "bun test test/unit",
+    "test:integration": "bun test test/integration",
+    "test:e2e": "playwright test",
+    "test:all": "bun test && playwright test"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
+    "@tauri-apps/plugin-fs": "^2.4.5",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
@@ -25,6 +34,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tauri-apps/cli": "^2.9.6",
     "@types/howler": "^2.2.12",
     "@types/node": "^20",
     "@types/react": "^19",

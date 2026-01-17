@@ -1,6 +1,6 @@
 # Mystic Tarot
 
-A beautiful, mystical tarot reading application featuring authentic Rider-Waite Smith cards, particle effects, and smooth animations.
+A beautiful, mystical tarot reading application featuring authentic Rider-Waite Smith cards, particle effects, and smooth animations. Now available as a native desktop application for macOS and Linux!
 
 ## Features
 
@@ -15,12 +15,15 @@ A beautiful, mystical tarot reading application featuring authentic Rider-Waite 
 - **Particle Effects**: Beautiful floating particles in gold, white, and silver
 - **Smooth Animations**: 3D card flip animations and hover effects
 - **Reading History**: Save and view your past readings
-- **Responsive Design**: Works beautifully on desktop and mobile devices
-- **Dark Mode Support**: Automatic theme switching
+- **Native Desktop App**: macOS and Linux support with Tauri
+- **Local Storage**: Persistent data storage using Rust backend
+- **Sound Effects**: Card flip, shuffle, and reveal sounds
 
 ## Tech Stack
 
 - **Framework**: Next.js 16.1.3 with App Router
+- **Desktop Runtime**: Tauri 2.9.6
+- **Backend**: Rust with serde for data persistence
 - **Runtime**: Bun
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion
@@ -32,6 +35,8 @@ A beautiful, mystical tarot reading application featuring authentic Rider-Waite 
 ### Prerequisites
 
 - Bun runtime installed
+- Rust toolchain (for desktop app builds)
+- Xcode Command Line Tools (for macOS builds)
 
 ### Installation
 
@@ -39,7 +44,7 @@ A beautiful, mystical tarot reading application featuring authentic Rider-Waite 
 bun install
 ```
 
-### Development
+### Web Development
 
 ```bash
 bun run dev
@@ -47,13 +52,34 @@ bun run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Build
+### Desktop App Development
+
+```bash
+bun run tauri:dev
+```
+
+This will launch the native desktop application with hot-reloading.
+
+### Building for Production
+
+#### Web Build
 
 ```bash
 bun run build
 ```
 
-### Production
+#### Desktop App Build
+
+```bash
+bun run tauri:build
+```
+
+This creates:
+
+- macOS App: `src-tauri/target/release/bundle/macos/Mystic Tarot.app`
+- DMG Installer: `src-tauri/target/release/bundle/dmg/Mystic Tarot_0.0.0_x64.dmg`
+
+### Running Production Web Server
 
 ```bash
 bun run start

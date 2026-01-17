@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Reading } from "@/types/tarot"
-import { getHistory, clearHistory } from "@/lib/storage"
+import { getHistoryAsync, clearHistoryAsync } from "@/lib/storage-tauri"
 import { ReadingHistory } from "@/components/tarot/reading-history"
 import { SoundManager } from "@/components/tarot/sound-manager"
 import { ParticlesBackground } from "@/components/tarot/particles-background"
@@ -18,9 +18,20 @@ export default function HistoryPage() {
     loadHistory()
   }, [])
 
-  const loadHistory = () => {
-    const history = getHistory()
-    setReadings(history)
+  const loadHistory = async () => {
+    const history = await getHistoryAsync()
+    const convertedReadings: Reading[] = history.map((item) => ({
+      id: item.id,
+      date: new Date(item.date),
+      spread: item.spread,
+      cards: item.cards.map((card) => ({
+        cardId: card.cardId,
+        position: card.position,
+        isReversed: card.isReversed,
+      })),
+      meaningSource: item.meaningSource,
+    }))
+    setReadings(convertedReadings)
   }
 
   const handleDelete = (id: string) => {
@@ -29,8 +40,8 @@ export default function HistoryPage() {
     localStorage.setItem("tarot_history", JSON.stringify(updated))
   }
 
-  const handleClearAll = () => {
-    clearHistory()
+  const handleClearAll = async () => {
+    await clearHistoryAsync()
     setReadings([])
     setShowDeleteConfirm(false)
   }

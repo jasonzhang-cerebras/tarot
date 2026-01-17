@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react"
 import { DailyCard } from "@/types/tarot"
 import { getTodaysDailyCard, isDailyCardExpired } from "@/lib/daily-card"
-import { getDailyCard, saveDailyCard } from "@/lib/storage"
-import { getUserName } from "@/lib/storage"
+import { getDailyCardAsync, saveDailyCardAsync } from "@/lib/storage-tauri"
+import { getUserNameAsync } from "@/lib/storage-tauri"
 import { getZodiacSign } from "@/lib/zodiac"
 import { DailyCardDisplay } from "@/components/tarot/daily-card-display"
 import { DailyCardShare } from "@/components/tarot/daily-card-share"
@@ -21,16 +21,16 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const loadDailyCard = () => {
-      const cached = getDailyCard()
-      const name = getUserName()
+    const loadDailyCard = async () => {
+      const cached = await getDailyCardAsync()
+      const name = await getUserNameAsync()
 
       if (cached && !isDailyCardExpired(cached.date)) {
         setDailyCard(cached)
       } else {
         const zodiacSign = getZodiacSign(new Date())
         const newDailyCard = getTodaysDailyCard(zodiacSign)
-        saveDailyCard(newDailyCard)
+        await saveDailyCardAsync(newDailyCard)
         setDailyCard(newDailyCard)
       }
 
