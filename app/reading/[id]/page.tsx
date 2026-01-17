@@ -8,6 +8,7 @@ import { tarotCards } from "@/lib/tarot-data"
 import { shuffleDeck, drawCards } from "@/lib/shuffle"
 import { addToHistory, getHistory } from "@/lib/storage"
 import { SoundManager } from "@/components/tarot/sound-manager"
+import { ParticlesBackground } from "@/components/tarot/particles-background"
 import { ShuffleAnimation } from "@/components/tarot/shuffle-animation"
 import { ReadingDisplay } from "@/components/tarot/reading-display"
 import { Button } from "@/components/ui/button"
@@ -129,12 +130,13 @@ export default function SpreadReadingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-purple-50 to-purple-100">
+      <ParticlesBackground />
       <SoundManager />
 
       <header className="bg-purple-900/90 backdrop-blur-sm border-b-2 border-yellow-500/50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl font-bold text-yellow-500">{spread.name}</h1>
+            <h1 className="text-2xl font-bold text-yellow-500 font-cinzel">{spread.name}</h1>
           </div>
 
           <div className="flex gap-2">

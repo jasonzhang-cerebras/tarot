@@ -32,7 +32,7 @@ export function Card({ card, isReversed = false, onClick, size = "md", showBack 
       animate={{
         rotate: isReversed ? 180 : 0,
       }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {showBack ? (
         <div className="w-full h-full rounded-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 border-2 border-yellow-500 shadow-lg flex items-center justify-center">
@@ -41,7 +41,7 @@ export function Card({ card, isReversed = false, onClick, size = "md", showBack 
           </div>
         </div>
       ) : (
-        <div className="w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-purple-400 shadow-lg overflow-hidden">
+        <div className="w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-yellow-600 shadow-lg overflow-hidden">
           <img
             src={card.image}
             alt={card.name}
@@ -58,6 +58,7 @@ export function Card({ card, isReversed = false, onClick, size = "md", showBack 
           className="absolute inset-0 bg-black/70 rounded-lg flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 0.2 }}
         >
           <div className="text-white text-center p-2">
             <p className="font-bold text-sm">{card.name}</p>

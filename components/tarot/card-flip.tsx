@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { TarotCard } from "@/types/tarot"
 import { useState } from "react"
 
@@ -26,40 +26,40 @@ export function CardFlip({ card, isReversed = false, onFlip, size = "md" }: Card
   }
 
   return (
-    <div className={`relative ${sizeClasses[size]} cursor-pointer`} onClick={handleFlip}>
-      <AnimatePresence mode="wait">
-        {!isFlipped ? (
-          <motion.div
-            key="back"
-            className="absolute inset-0 w-full h-full rounded-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 border-2 border-yellow-500 shadow-lg flex items-center justify-center"
-            initial={{ rotateY: 0 }}
-            exit={{ rotateY: -90 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="w-3/4 h-3/4 rounded-full border-2 border-yellow-500/50 flex items-center justify-center">
-              <div className="w-1/2 h-1/2 rounded-full bg-yellow-500/20" />
-            </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            key="front"
-            className="absolute inset-0 w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-purple-400 shadow-lg overflow-hidden"
-            initial={{ rotateY: 90 }}
-            animate={{ rotateY: isReversed ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
-            style={{ transformStyle: "preserve-3d" }}
-          >
-            <img
-              src={card.image}
-              alt={card.name}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                e.currentTarget.src = "/placeholder-card.png"
-              }}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
+    <div
+      className={`relative ${sizeClasses[size]} cursor-pointer`}
+      style={{ perspective: "1000px" }}
+      onClick={handleFlip}
+    >
+      <motion.div
+        className="relative w-full h-full"
+        style={{ transformStyle: "preserve-3d" }}
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        <div
+          className="absolute inset-0 w-full h-full rounded-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 border-2 border-yellow-500 shadow-lg flex items-center justify-center"
+          style={{ backfaceVisibility: "hidden" }}
+        >
+          <div className="w-3/4 h-3/4 rounded-full border-2 border-yellow-500/50 flex items-center justify-center">
+            <div className="w-1/2 h-1/2 rounded-full bg-yellow-500/20" />
+          </div>
+        </div>
+        <div
+          className="absolute inset-0 w-full h-full rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-yellow-600 shadow-lg overflow-hidden"
+          style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+        >
+          <img
+            src={card.image}
+            alt={card.name}
+            className="w-full h-full object-cover"
+            style={{ transform: isReversed ? "rotate(180deg)" : "rotate(0deg)" }}
+            onError={(e) => {
+              e.currentTarget.src = "/placeholder-card.png"
+            }}
+          />
+        </div>
+      </motion.div>
     </div>
   )
 }

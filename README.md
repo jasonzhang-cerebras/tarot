@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mystic Tarot
+
+A beautiful, mystical tarot reading application featuring authentic Rider-Waite Smith cards, particle effects, and smooth animations.
+
+## Features
+
+- **Authentic Rider-Waite Smith Deck**: 78 cards from the 1909 "Roses & Lilies" edition
+- **Multiple Spread Types**: Choose from various tarot spreads including:
+  - Single Card (Daily Card)
+  - Three Card Spread (Past, Present, Future)
+  - Celtic Cross
+  - Five Card Spread
+- **Interactive Card Selection**: Click cards to reveal their meanings
+- **Card Reversals**: Cards can appear upright or reversed with different interpretations
+- **Particle Effects**: Beautiful floating particles in gold, white, and silver
+- **Smooth Animations**: 3D card flip animations and hover effects
+- **Reading History**: Save and view your past readings
+- **Responsive Design**: Works beautifully on desktop and mobile devices
+- **Dark Mode Support**: Automatic theme switching
+
+## Tech Stack
+
+- **Framework**: Next.js 16.1.3 with App Router
+- **Runtime**: Bun
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Particles**: @tsparticles/react
+- **Typography**: Cinzel (Google Fonts)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Bun runtime installed
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+```
+
+### Development
+
+```bash
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun run build
+```
 
-## Learn More
+### Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+bun run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+tarot/
+├── app/                    # Next.js app directory
+│   ├── history/           # Reading history page
+│   ├── reading/           # Reading pages
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/
+│   ├── tarot/             # Tarot-specific components
+│   │   ├── card.tsx       # Individual card component
+│   │   ├── card-back.tsx  # Card back design
+│   │   ├── card-flip.tsx  # 3D flip animation
+│   │   ├── daily-card-display.tsx
+│   │   ├── particles-background.tsx
+│   │   ├── reading-display.tsx
+│   │   ├── spread-selector.tsx
+│   │   └── ...
+│   └── ui/                # UI components
+├── lib/                   # Utility functions
+│   ├── tarot-data.ts      # Card data and meanings
+│   ├── spreads.ts         # Spread configurations
+│   ├── shuffle.ts         # Card shuffling logic
+│   └── ...
+├── public/
+│   ├── cards/             # Card images
+│   │   ├── major/         # Major Arcana (22 cards)
+│   │   ├── cups/          # Cups suit (14 cards)
+│   │   ├── pentacles/     # Pentacles suit (14 cards)
+│   │   ├── swords/        # Swords suit (14 cards)
+│   │   └── wands/         # Wands suit (14 cards)
+│   └── sounds/            # Sound effects
+└── types/
+    └── tarot.ts           # TypeScript types
+```
 
-## Deploy on Vercel
+## Card Data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application includes all 78 cards from the Rider-Waite Smith deck:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Major Arcana (22 cards)
+
+The Fool, The Magician, The High Priestess, The Empress, The Emperor, The Hierophant, The Lovers, The Chariot, Strength, The Hermit, Wheel of Fortune, Justice, The Hanged Man, Death, Temperance, The Devil, The Tower, The Star, The Moon, The Sun, Judgement, The World
+
+### Minor Arcana (56 cards)
+
+- **Cups**: Ace through King (14 cards)
+- **Pentacles**: Ace through King (14 cards)
+- **Swords**: Ace through King (14 cards)
+- **Wands**: Ace through King (14 cards)
+
+Each card includes:
+
+- Name and image
+- Upright meaning
+- Reversed meaning
+- Keywords
+
+## Customization
+
+### Colors
+
+The color scheme is defined in `app/globals.css`. The theme uses:
+
+- Primary colors: Purple and gold tones
+- Accent colors: Yellow/gold for highlights
+- Background: Animated gradient
+
+### Particles
+
+Particle effects are configured in `components/tarot/particles-background.tsx`:
+
+- Colors: Gold (#ffd700), White (#ffffff), Silver (#c0c0c0)
+- Count: 100 particles (desktop)
+- Speed: 0.5
+- Interactive: Hover and click effects
+
+### Animations
+
+Card flip duration is set to 0.6 seconds in:
+
+- `components/tarot/card-flip.tsx`
+- `components/tarot/card.tsx`
+
+## License
+
+MIT
+
+## Credits
+
+- Card images: Rider-Waite Smith deck (1909 "Roses & Lilies" edition) from Wikimedia Commons
+- Font: Cinzel by Natanael Gama
+- Icons: Lucide React

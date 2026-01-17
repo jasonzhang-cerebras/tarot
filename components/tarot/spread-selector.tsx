@@ -23,7 +23,7 @@ export function SpreadSelector({ spreads, onSelect }: SpreadSelectorProps) {
     <div className="flex flex-col items-center gap-8 p-8">
       <div className="flex items-center gap-2 text-yellow-500">
         <Sparkles className="h-6 w-6" />
-        <h2 className="text-3xl font-bold text-purple-900">Choose Your Spread</h2>
+        <h2 className="text-3xl font-bold text-purple-900 font-cinzel">Choose Your Spread</h2>
         <Sparkles className="h-6 w-6" />
       </div>
 
@@ -39,7 +39,7 @@ export function SpreadSelector({ spreads, onSelect }: SpreadSelectorProps) {
               }`}
             >
               <div className="flex items-center justify-between w-full">
-                <h3 className="text-xl font-bold">{spread.name}</h3>
+                <h3 className="text-xl font-bold font-cinzel">{spread.name}</h3>
                 <ChevronRight className="h-5 w-5" />
               </div>
               <p className="text-sm opacity-80">{spread.description}</p>

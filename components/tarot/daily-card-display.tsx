@@ -19,7 +19,7 @@ export function DailyCardDisplay({ dailyCard }: DailyCardDisplayProps) {
     >
       <div className="flex items-center gap-2 text-yellow-500">
         <Sparkles className="h-6 w-6" />
-        <h2 className="text-2xl font-bold">Tarot of the Day</h2>
+        <h2 className="text-2xl font-bold font-cinzel">Tarot of the Day</h2>
         <Sparkles className="h-6 w-6" />
       </div>
 
@@ -27,8 +27,23 @@ export function DailyCardDisplay({ dailyCard }: DailyCardDisplayProps) {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
+        className="relative"
       >
-        <Card card={dailyCard.card} size="lg" />
+        <motion.div
+          className="absolute inset-0 bg-yellow-400/20 blur-3xl rounded-full"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <div className="relative">
+          <Card card={dailyCard.card} size="lg" />
+        </div>
       </motion.div>
 
       <motion.div
@@ -37,7 +52,7 @@ export function DailyCardDisplay({ dailyCard }: DailyCardDisplayProps) {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        <h3 className="text-xl font-bold text-purple-900 mb-2">{dailyCard.card.name}</h3>
+        <h3 className="text-xl font-bold text-purple-900 mb-2 font-cinzel">{dailyCard.card.name}</h3>
         <p className="text-purple-700 mb-4">{dailyCard.positiveMeaning}</p>
 
         <div className="bg-purple-100 rounded-lg p-4 border border-purple-300">
